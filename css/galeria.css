@@ -1,0 +1,20 @@
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+#galeria div {
+    padding: 10px;
+}
+
+#galeria div img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+#galeria div h3 {
+    text-align: center;
+}

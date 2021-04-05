@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Tangerine:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("https://fonts.googleapis.com/css?family=Rancho");
+@import url(menu.css);
+@import url(banner.css);
+@import url(bloq.css);
+@import url(info.css);
+@import url(galeria.css);
+@import url(quienes.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* el padding se contiene en el mismo modelo de cajas*/
+    /*font-family: 'Tangerine', serif;*/
+    font-family: 'Rancho', serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    /* quedara pegado */
+    top: 0;
+    /* ubicado en la esquina*/
+    left: 0;
+    z-index: 100;
+    /* que quede por encima de los demas elementos*/
+}
+
+h1 {
+    float: left;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+header .contenedor {
+    display: table;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenidos {
+    text-align: center;
+}
+
+footer .contenedor {
+    display: flex;
+    /* se mostrara como elementos flexibles*/
+    flex-wrap: wrap;
+    /* se acomodan unas bajo otras */
+    justify-content: center;
+    padding-bottom: 25px;
+    height: 100px;
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media (min-width:768px) {
+    .sociales {
+        width: auto;
+    }
+    footer .contenedor {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+}
+
+footer {
+    background: darkgreen;
+}
